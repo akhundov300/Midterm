@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+}
+
+._container {
+    max-width: 1046px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+._flex-standart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_start {
+    position: relative;
+    background-color: #252B42;
+    height: 976px;
+}
+
+.main_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.main_logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.menu_list {
+    flex-wrap: wrap;
+}
+
+.menu_link {
+    position: relative;
+    padding: 30px 21px;
+}
+
+.menu_link:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: 15px;
+    transition: 0.6s;
+}
+
+.menu_link:hover {
+    color: #a4a4a4;
+}
+
+.menu_link:hover:after {
+    width: 100%;
+}
+
+.menu_link_login {
+    font-weight: 700;
+}
+
+.menu_link_btn {
+    background-color: #23A6F0;
+    padding: 25px 40px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.menu_link_btn:after {
+    content: "→";
+    margin-left: 15px;
+}
+
+.main_container_purpose {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+}
+
+.main_text {
+    max-width: 50%;
+}
+
+.main_text > h1 {
+    font-size: 58px;
+    font-weight: 800;
+}
+
+.main_text > p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 35px 0;
+}
+
+.main_photo {
+    position: relative;
+    top: -150px;
+}
+
+/* Photos */
+.vector_1{
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.vector_2{
+    left: -20px;
+    position: absolute;
+}
+
+.vector_3 {
+    position: absolute;
+    z-index: 3;
+}
+
+.telephone {
+    position: absolute;
+    z-index: 14;
+    top: -40px;
+}
+
+.btn_group {
+    display: flex;
+    gap: 10px;
+}
+
+.custom_btn_1 {
+    color: #FFFFFF;
+    border-radius: 37px;
+    font-weight: 700;
+    padding: 15px 36px;
+    background: #23A6F0;
+}
+
+.custom_btn_2 {
+    color: #FFFFFF;
+    border-radius: 37px;
+    font-weight: 700;
+    padding: 15px 36px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+}
